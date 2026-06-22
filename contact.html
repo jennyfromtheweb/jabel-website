@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get in touch with JABEL. Contact us for support, partnerships, media inquiries, or general questions." />
+  <title>Contact Us — JABEL</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/logo.png" type="image/png" />
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ── Navigation ─────────────────────────────────────── -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="JABEL — Home">
+        <img src="assets/logo.png" alt="" class="nav__logo-img" />
+        <div>
+          <div class="nav__logo-name">JABEL</div>
+          <div class="nav__logo-tagline">Justice Advocates Battling Exploitation &amp; Lies</div>
+        </div>
+      </a>
+      <ul class="nav__links" role="list">
+        <li class="nav__item nav__item--dropdown">
+          <a href="about.html">About JABEL <span class="chevron">▾</span></a>
+          <ul class="nav__dropdown" role="list">
+            <li><a href="about.html#our-story">Our Story</a></li>
+            <li><a href="about.html#our-impact">Our Impact</a></li>
+            <li><a href="about.html#media-news">Media &amp; News</a></li>
+            <li><a href="about.html#anabels-blog">Anabel's Blog</a></li>
+          </ul>
+        </li>
+        <li class="nav__item nav__item--dropdown">
+          <a href="survivor-support.html">Survivor Support <span class="chevron">▾</span></a>
+          <ul class="nav__dropdown" role="list">
+            <li><a href="survivor-support.html#crisis-hotline">Crisis Hotline</a></li>
+            <li><a href="survivor-support.html#resources">Resources</a></li>
+            <li><a href="survivor-support.html#submit-report">Submit a Report</a></li>
+          </ul>
+        </li>
+        <li class="nav__item nav__item--dropdown">
+          <a href="get-involved.html">Get Involved <span class="chevron">▾</span></a>
+          <ul class="nav__dropdown" role="list">
+            <li><a href="get-involved.html#events">Events</a></li>
+            <li><a href="get-involved.html#volunteer">Volunteer</a></li>
+            <li><a href="get-involved.html#partner">Partner</a></li>
+          </ul>
+        </li>
+        <li class="nav__item"><a href="contact.html" class="active">Contact Us</a></li>
+      </ul>
+      <div class="nav__right">
+        
+        <a href="donate.html" class="btn btn--primary btn--sm">Donate</a>
+        <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav__mobile" id="mobile-menu" aria-hidden="true">
+      <a href="about.html" class="nav__mobile-link">About JABEL</a>
+      <div class="nav__mobile-sub">
+        <a href="about.html#our-story">Our Story</a>
+        <a href="about.html#our-impact">Our Impact</a>
+        <a href="about.html#media-news">Media &amp; News</a>
+        <a href="about.html#anabels-blog">Anabel's Blog</a>
+      </div>
+      <a href="survivor-support.html" class="nav__mobile-link">Survivor Support</a>
+      <div class="nav__mobile-sub">
+        <a href="survivor-support.html#crisis-hotline">Crisis Hotline</a>
+        <a href="survivor-support.html#resources">Resources</a>
+        <a href="survivor-support.html#submit-report">Submit a Report</a>
+      </div>
+      <a href="get-involved.html" class="nav__mobile-link">Get Involved</a>
+      <div class="nav__mobile-sub">
+        <a href="get-involved.html#events">Events</a>
+        <a href="get-involved.html#volunteer">Volunteer</a>
+        <a href="get-involved.html#partner">Partner</a>
+      </div>
+      <a href="contact.html" class="nav__mobile-link">Contact Us</a>
+      <div class="nav__mobile-cta">
+        <a href="donate.html" class="btn btn--primary" style="width:100%;justify-content:center;">Donate Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="crisis-bar" role="alert">
+    Need help now? Call or text: <a href="tel:9167772585">916-777-2585</a> — a real person will answer.
+  </div>
+
+  <main id="main-content">
+
+    <!-- ── Page Header ─────────────────────────────────────── -->
+    <header class="page-header">
+      <div class="page-header__inner">
+        <p class="page-header__label">Contact Us</p>
+        <h1>Get in Touch</h1>
+        <p>Whether you're a survivor seeking help, a potential volunteer, a partner organization, or a media contact — we'd love to hear from you.</p>
+      </div>
+    </header>
+
+    <!-- ── Contact body ───────────────────────────────────── -->
+    <section class="section">
+      <div class="container">
+        <div class="two-col two-col--start">
+
+          <!-- Left: form -->
+          <div>
+            <div class="section-header">
+              <p class="section-label">Send a Message</p>
+              <h2>We'll get back to you</h2>
+            </div>
+            <form id="contact-form" aria-label="Contact form"
+              action="https://formspree.io/f/REPLACE_WITH_FORMSPREE_ID"
+              method="POST">
+              <!-- TODO: Create a free Formspree account at formspree.io
+                   and replace REPLACE_WITH_FORMSPREE_ID with your form ID.
+                   Alternatively, use Netlify Forms (add netlify attribute) or EmailJS. -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="contact-first">First Name <span>*</span></label>
+                  <input class="form-input" type="text" id="contact-first" name="first_name" required autocomplete="given-name" placeholder="Anabel" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contact-last">Last Name</label>
+                  <input class="form-input" type="text" id="contact-last" name="last_name" autocomplete="family-name" placeholder="Last name (optional)" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact-email">Email <span>*</span></label>
+                <input class="form-input" type="email" id="contact-email" name="email" required autocomplete="email" placeholder="your@email.com" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact-phone">Phone (optional)</label>
+                <input class="form-input" type="tel" id="contact-phone" name="phone" autocomplete="tel" placeholder="(916) 000-0000" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact-reason">Reason for contact <span>*</span></label>
+                <select class="form-select" id="contact-reason" name="reason" required>
+                  <option value="">Select one…</option>
+                  <option>I need survivor support / resources</option>
+                  <option>I want to volunteer</option>
+                  <option>I want to become a partner or sponsor</option>
+                  <option>I'm a media or press contact</option>
+                  <option>I want to make a referral</option>
+                  <option>General inquiry</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact-message">Message <span>*</span></label>
+                <textarea class="form-textarea" id="contact-message" name="message" required placeholder="Tell us how we can help or what you'd like to discuss…"></textarea>
+              </div>
+              <button type="submit" class="btn btn--dark" style="width:100%;justify-content:center;padding:1rem;">Send Message</button>
+            </form>
+          </div>
+
+          <!-- Right: contact info -->
+          <div>
+            <div class="section-header">
+              <p class="section-label">Our Information</p>
+              <h2>Reach Us Directly</h2>
+            </div>
+
+            <div style="display:flex;flex-direction:column;gap:1.5rem;margin-bottom:2.5rem;">
+              <div style="display:flex;gap:1rem;align-items:flex-start;">
+                <span style="font-size:1.5rem;line-height:1;flex-shrink:0;">📞</span>
+                <div>
+                  <strong style="display:block;margin-bottom:.25rem;">Crisis &amp; General Line</strong>
+                  <a href="tel:9167772585" style="color:var(--teal-hover);font-weight:600;font-size:1.125rem;">916-777-2585</a>
+                  <p style="font-size:.875rem;margin-top:.25rem;">24/7 — a real person will answer your call or text.</p>
+                </div>
+              </div>
+              <div style="display:flex;gap:1rem;align-items:flex-start;">
+                <span style="font-size:1.5rem;line-height:1;flex-shrink:0;">📍</span>
+                <div>
+                  <strong style="display:block;margin-bottom:.25rem;">Service Area</strong>
+                  <p style="font-size:.9375rem;">Sacramento &amp; surrounding region<br><em style="font-size:.875rem;color:var(--gray-500);">We also work nationwide — human trafficking knows no boundaries.</em></p>
+                </div>
+              </div>
+              <div style="display:flex;gap:1rem;align-items:flex-start;">
+                <span style="font-size:1.5rem;line-height:1;flex-shrink:0;">📧</span>
+                <div>
+                  <strong style="display:block;margin-bottom:.25rem;">Email</strong>
+                  <!-- TODO: Replace with JABEL's actual email address -->
+                  <a href="mailto:info@ja-bel.org" style="color:var(--teal-hover);font-weight:600;">info@ja-bel.org</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Social -->
+            <div>
+              <h4 style="margin-bottom:1rem;">Follow JABEL</h4>
+              <div style="display:flex;flex-direction:column;gap:.75rem;">
+                <a href="https://www.instagram.com/jamie.anabel.jabel" target="_blank" rel="noopener"
+                  style="display:flex;align-items:center;gap:.75rem;color:var(--gray-700);font-weight:500;font-size:.9375rem;transition:color .15s;"
+                  onmouseover="this.style.color='var(--teal-hover)'" onmouseout="this.style.color='var(--gray-700)'">
+                  📷 Instagram — @jamie.anabel.jabel
+                </a>
+                <a href="https://www.linkedin.com/in/1anabelvelasquez/" target="_blank" rel="noopener"
+                  style="display:flex;align-items:center;gap:.75rem;color:var(--gray-700);font-weight:500;font-size:.9375rem;transition:color .15s;"
+                  onmouseover="this.style.color='var(--teal-hover)'" onmouseout="this.style.color='var(--gray-700)'">
+                  💼 LinkedIn — Anabel Velasquez
+                </a>
+                <a href="https://www.tiktok.com/@jabel.jamie.anabel" target="_blank" rel="noopener"
+                  style="display:flex;align-items:center;gap:.75rem;color:var(--gray-700);font-weight:500;font-size:.9375rem;transition:color .15s;"
+                  onmouseover="this.style.color='var(--teal-hover)'" onmouseout="this.style.color='var(--gray-700)'">
+                  🎵 TikTok — @jabel.jamie.anabel
+                </a>
+                <a href="https://www.yelp.com/biz/jabel-citrus-heights" target="_blank" rel="noopener"
+                  style="display:flex;align-items:center;gap:.75rem;color:var(--gray-700);font-weight:500;font-size:.9375rem;transition:color .15s;"
+                  onmouseover="this.style.color='var(--teal-hover)'" onmouseout="this.style.color='var(--gray-700)'">
+                  ⭐ Yelp — JABEL Citrus Heights
+                </a>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- For survivors -->
+            <div class="notice notice--info">
+              <span>💙</span>
+              <div>
+                <strong>Are you a survivor seeking immediate help?</strong>
+                <p style="font-size:.875rem;margin-top:.375rem;">Please call or text our crisis line at <a href="tel:9167772585" style="font-weight:700;color:var(--crisis-text);">916-777-2585</a> — don't wait for a form response.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ──────────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/logo.png" alt="JABEL Logo" class="footer__logo" />
+          <div class="footer__brand-name">JABEL</div>
+          <p>Justice Advocates Battling Exploitation &amp; Lies. Empowering survivors from crisis to thriving.</p>
+          <p class="ein">501(c)(3) Nonprofit · EIN: 99-3959461</p>
+          <div class="footer__social" aria-label="Social media links">
+            <a href="https://www.instagram.com/jamie.anabel.jabel" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
+            <a href="https://www.linkedin.com/in/1anabelvelasquez/" target="_blank" rel="noopener" aria-label="LinkedIn">💼</a>
+            <a href="https://www.tiktok.com/@jabel.jamie.anabel" target="_blank" rel="noopener" aria-label="TikTok">🎵</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>About JABEL</h4>
+          <ul>
+            <li><a href="about.html#our-story">Our Story</a></li>
+            <li><a href="about.html#our-impact">Our Impact</a></li>
+            <li><a href="about.html#media-news">Media &amp; News</a></li>
+            <li><a href="about.html#anabels-blog">Anabel's Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Survivor Support</h4>
+          <ul>
+            <li><a href="survivor-support.html#crisis-hotline">Crisis Hotline</a></li>
+            <li><a href="survivor-support.html#resources">Resources</a></li>
+            <li><a href="survivor-support.html#submit-report">Submit a Report</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Get Involved</h4>
+          <ul>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="get-involved.html#volunteer">Volunteer</a></li>
+            <li><a href="get-involved.html#partner">Partner With Us</a></li>
+            <li><a href="get-involved.html#events">Events</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 JABEL. All Rights Reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
