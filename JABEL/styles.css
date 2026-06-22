@@ -155,7 +155,7 @@ p  { color: var(--gray-700); }
   transition: color var(--transition), background var(--transition);
 }
 .nav__item > a:hover, .nav__item > a.active { color: var(--navy); background: transparent; }
-.nav__item > a .chevron { font-size: .65rem; transition: transform var(--transition); opacity: .6; }
+.nav__item > a .chevron { font-size: .85rem; transition: transform var(--transition); opacity: .6; }
 .nav__item:hover > a .chevron { transform: rotate(180deg); }
 
 /* Dropdowns */
